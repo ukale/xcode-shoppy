@@ -14,8 +14,8 @@
         <!--View Controller-->
         <scene sceneID="Cj3-vV-ndG">
             <objects>
-                <collectionViewController id="Wok-9c-9sP" customClass="ViewController" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="evJ-5U-7dD">
+                <collectionViewController storyboardIdentifier="collection_vc" id="Wok-9c-9sP" customClass="ViewController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="evJ-5U-7dD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

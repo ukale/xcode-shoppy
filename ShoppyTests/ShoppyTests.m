@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "ViewController.h"
 
 @interface ShoppyTests : XCTestCase
 
@@ -24,9 +25,15 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+- (void)testLoadItems {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    ViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"collection_vc"];
+    [vc view]; // Loads the view hierarchy
+    [vc viewDidLoad];
+
+    [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate dateWithTimeIntervalSinceNow:5.0]];
+    NSUInteger num = [vc collectionView:vc.collectionView numberOfItemsInSection:0];
+    XCTAssert(num >= 48);
 }
 
 - (void)testPerformanceExample {
