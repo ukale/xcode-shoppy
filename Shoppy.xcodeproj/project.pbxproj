@@ -15,6 +15,9 @@
 		844BCF941EE7A60F00282E8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844BCF921EE7A60F00282E8F /* LaunchScreen.storyboard */; };
 		844BCF9F1EE7A61000282E8F /* ShoppyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 844BCF9E1EE7A61000282E8F /* ShoppyTests.m */; };
 		844BCFAA1EE7A61000282E8F /* ShoppyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 844BCFA91EE7A61000282E8F /* ShoppyUITests.m */; };
+		844BCFB81EE7A6F300282E8F /* all.json in Resources */ = {isa = PBXBuildFile; fileRef = 844BCFB71EE7A6F300282E8F /* all.json */; };
+		844BCFBE1EE7A8B400282E8F /* StoreItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 844BCFBD1EE7A8B400282E8F /* StoreItemCollectionViewCell.m */; };
+		844BCFC21EE7A92300282E8F /* StoreItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 844BCFC11EE7A92300282E8F /* StoreItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		844BCFA51EE7A61000282E8F /* ShoppyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoppyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		844BCFA91EE7A61000282E8F /* ShoppyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShoppyUITests.m; sourceTree = "<group>"; };
 		844BCFAB1EE7A61000282E8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		844BCFB71EE7A6F300282E8F /* all.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = all.json; sourceTree = "<group>"; };
+		844BCFBC1EE7A8B400282E8F /* StoreItemCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreItemCollectionViewCell.h; sourceTree = "<group>"; };
+		844BCFBD1EE7A8B400282E8F /* StoreItemCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreItemCollectionViewCell.m; sourceTree = "<group>"; };
+		844BCFBF1EE7A8CE00282E8F /* Configs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Configs.h; sourceTree = "<group>"; };
+		844BCFC01EE7A92300282E8F /* StoreItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreItem.h; sourceTree = "<group>"; };
+		844BCFC11EE7A92300282E8F /* StoreItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,10 @@
 		844BCF831EE7A60F00282E8F /* Shoppy */ = {
 			isa = PBXGroup;
 			children = (
+				844BCFBB1EE7A84E00282E8F /* Views */,
+				844BCFBA1EE7A84900282E8F /* Models */,
+				844BCFB91EE7A84000282E8F /* Helpers */,
+				844BCFB71EE7A6F300282E8F /* all.json */,
 				844BCF871EE7A60F00282E8F /* AppDelegate.h */,
 				844BCF881EE7A60F00282E8F /* AppDelegate.m */,
 				844BCF8A1EE7A60F00282E8F /* ViewController.h */,
@@ -138,6 +151,32 @@
 				844BCFAB1EE7A61000282E8F /* Info.plist */,
 			);
 			path = ShoppyUITests;
+			sourceTree = "<group>";
+		};
+		844BCFB91EE7A84000282E8F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				844BCFBF1EE7A8CE00282E8F /* Configs.h */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		844BCFBA1EE7A84900282E8F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				844BCFC01EE7A92300282E8F /* StoreItem.h */,
+				844BCFC11EE7A92300282E8F /* StoreItem.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		844BCFBB1EE7A84E00282E8F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				844BCFBC1EE7A8B400282E8F /* StoreItemCollectionViewCell.h */,
+				844BCFBD1EE7A8B400282E8F /* StoreItemCollectionViewCell.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,15 +246,18 @@
 				TargetAttributes = {
 					844BCF801EE7A60F00282E8F = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2GBEZ3S548;
 						ProvisioningStyle = Automatic;
 					};
 					844BCF991EE7A61000282E8F = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2GBEZ3S548;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 844BCF801EE7A60F00282E8F;
 					};
 					844BCFA41EE7A61000282E8F = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2GBEZ3S548;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 844BCF801EE7A60F00282E8F;
 					};
@@ -247,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				844BCF941EE7A60F00282E8F /* LaunchScreen.storyboard in Resources */,
+				844BCFB81EE7A6F300282E8F /* all.json in Resources */,
 				844BCF911EE7A60F00282E8F /* Assets.xcassets in Resources */,
 				844BCF8F1EE7A60F00282E8F /* Main.storyboard in Resources */,
 			);
@@ -275,7 +318,9 @@
 			files = (
 				844BCF8C1EE7A60F00282E8F /* ViewController.m in Sources */,
 				844BCF891EE7A60F00282E8F /* AppDelegate.m in Sources */,
+				844BCFC21EE7A92300282E8F /* StoreItem.m in Sources */,
 				844BCF861EE7A60F00282E8F /* main.m in Sources */,
+				844BCFBE1EE7A8B400282E8F /* StoreItemCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,7 +469,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2GBEZ3S548;
 				INFOPLIST_FILE = Shoppy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kineticbytes.Shoppy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -435,7 +482,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2GBEZ3S548;
 				INFOPLIST_FILE = Shoppy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kineticbytes.Shoppy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -446,6 +495,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2GBEZ3S548;
 				INFOPLIST_FILE = ShoppyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kineticbytes.ShoppyTests;
@@ -458,6 +508,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2GBEZ3S548;
 				INFOPLIST_FILE = ShoppyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kineticbytes.ShoppyTests;
@@ -469,6 +520,7 @@
 		844BCFB51EE7A61000282E8F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 2GBEZ3S548;
 				INFOPLIST_FILE = ShoppyUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kineticbytes.ShoppyUITests;
@@ -480,6 +532,7 @@
 		844BCFB61EE7A61000282E8F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 2GBEZ3S548;
 				INFOPLIST_FILE = ShoppyUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kineticbytes.ShoppyUITests;
@@ -507,6 +560,7 @@
 				844BCFB01EE7A61000282E8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		844BCFB11EE7A61000282E8F /* Build configuration list for PBXNativeTarget "ShoppyTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +569,7 @@
 				844BCFB31EE7A61000282E8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		844BCFB41EE7A61000282E8F /* Build configuration list for PBXNativeTarget "ShoppyUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +578,7 @@
 				844BCFB61EE7A61000282E8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
