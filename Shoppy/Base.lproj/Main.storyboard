@@ -40,9 +40,9 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6FZ-cO-9Ko">
-                                            <rect key="frame" x="16" y="156" width="40" height="18"/>
-                                            <color key="backgroundColor" red="0.22660607395368026" green="0.34949879683892837" blue="0.46085937499999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <rect key="frame" x="16" y="154.5" width="39.5" height="19.5"/>
+                                            <color key="backgroundColor" red="0.24580078125000004" green="0.24580078125000004" blue="0.24580078125000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
